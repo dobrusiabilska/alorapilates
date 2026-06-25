@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Alora Pilates | Boutique Pilates Studio Warszawa</title>
+  <meta name="description" content="Alora Pilates to kameralne studio w Warszawie oferujące zajęcia na reformerach, treningi indywidualne i świadomy ruch w atmosferze quiet luxury.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alorapilates.pl">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alora Pilates | Boutique Pilates Studio Warszawa">
+  <meta property="og:description" content="Zajęcia na reformerach, treningi indywidualne i świadomy ruch w kameralnej atmosferze w centrum Warszawy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alorapilates.pl">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=1200&h=800&q=80">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SportsActivityLocation",
+        "@id": "https://alorapilates.pl/#studio",
+        "name": "Alora Pilates",
+        "image": "https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800&q=80",
+        "telephone": "+48 500 123 456",
+        "email": "hello@alorapilates.pl",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Mokotowska 42",
+          "addressLocality": "Warszawa",
+          "postalCode": "00-543",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "52.223120",
+          "longitude": "21.021870"
+        },
+        "url": "https://alorapilates.pl",
+        "priceRange": "$$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "16:00"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://alorapilates.pl/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy Pilates na reformerach jest odpowiedni dla osób początkujących?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak, zdecydowana większość naszych klientów zaczyna swoją drogę bez wcześniejszego doświadczenia. Nasze kameralne grupy (do 5 osób) pozwalają instruktorom dostosować intensywność i stopień trudności każdego ćwiczenia do Twoich indywidualnych możliwości."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak należy się ubrać na pierwsze zajęcia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wybierz wygodny strój sportowy, który nie krępuje ruchów, najlepiej przylegający do ciała, co ułatwi instruktorowi korygowanie postawy. Ćwiczymy w skarpetkach antypoślizgowych, które można również zakupić na miejscu w recepcji."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Global Reset & Box-Sizing Safety */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-primary: #F8F6F2;
+      --bg-secondary: #ECE6DD;
+      --bg-accent: #D8CEC2;
+      --text-primary: #262626;
+      --text-secondary: #6E6A66;
+      --accent: #8D9880;
+      --btn-bg: #262626;
+      --btn-hover: #3A3A3A;
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+      --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Typographical Overflow Prevention */
+    h1, h2, h3, h4, p, span, a, li, button {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      font-weight: 300;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Layout Helpers */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      width: 100%;
+    }
+
+    section {
+      padding: 8rem 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      width: 100%;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.95rem 2rem;
+      font-size: 0.875rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border-radius: 2px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--btn-bg);
+      color: #FFFFFF;
+      border: 1px solid var(--btn-bg);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--btn-hover);
+      border-color: var(--btn-hover);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--text-primary);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--text-primary);
+      color: #FFFFFF;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background-color: rgba(248, 246, 242, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(110, 106, 102, 0.1);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5.5rem;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 300;
+      padding: 0.5rem 0;
+      margin-right: auto;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+      font-weight: 500;
+      position: relative;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-primary);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: var(--accent);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-color: var(--bg-primary);
+      padding-top: 8.5rem;
+      padding-bottom: 6rem;
+    }
+
+    .hero-content {
+      max-width: 580px;
+    }
+
+    .hero-pretitle {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 5vw, 4.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+    }
+
+    .hero-text {
+      font-size: 1.125rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .hero-trust {
+      display: flex;
+      gap: 2rem;
+      border-top: 1px solid rgba(110, 106, 102, 0.2);
+      padding-top: 1.5rem;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+    }
+
+    .trust-item svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--accent);
+      fill: none;
+    }
+
+    /* Custom Hero Image Wrapper - Styled as Wide Horizontal Rectangle */
+    .hero-image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      overflow: hidden;
+      border-radius: 2px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.02);
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(0.85) contrast(1.01);
+    }
+
+    /* Subtle Wall Branding CSS Overlay - Simulating high-end physical decal */
+    .wall-branding {
+      position: absolute;
+      top: 10%;
+      left: 8%;
+      z-index: 2;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      opacity: 0.16;
+      mix-blend-mode: overlay;
+    }
+
+    .brand-word {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      color: var(--text-primary);
+      line-height: 1;
+    }
+
+    .brand-sub {
+      font-family: var(--font-body);
+      font-size: clamp(0.55rem, 1vw, 0.75rem);
+      font-weight: 500;
+      letter-spacing: 0.45em;
+      color: var(--text-primary);
+      margin-top: 0.4rem;
+      margin-left: 0.25rem;
+    }
+
+    /* Brand Introduction */
+    .intro {
+      background-color: var(--bg-secondary);
+      text-align: center;
+      width: 100%;
+    }
+
+    .intro-max {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    .intro-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .intro-text {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+    }
+
+    /* Why Pilates Section */
+    .why-pilates {
+      background-color: var(--bg-primary);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .benefit-card {
+      padding: 3rem 2rem;
+      background-color: var(--bg-secondary);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    }
+
+    .benefit-icon {
+      margin-bottom: 1.5rem;
+      display: flex;
+    }
+
+    .benefit-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--accent);
+      stroke-width: 1.5;
+      fill: none;
+    }
+
+    .benefit-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Classes Page / Section */
+    .classes-section {
+      background-color: var(--bg-secondary);
+    }
+
+    .class-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      width: 100%;
+    }
+
+    .class-card {
+      background: var(--bg-primary);
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .class-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .class-image {
+      height: 260px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .class-info {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .class-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid rgba(110, 106, 102, 0.1);
+      padding-bottom: 0.75rem;
+    }
+
+    .class-card h3 {
+      font-size: 1.625rem;
+      margin-bottom: 1rem;
+    }
+
+    .class-card p {
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .class-card .btn {
+      align-self: flex-start;
+      padding: 0.75rem 1.5rem;
+    }
+
+    /* Why Alora */
+    .why-alora {
+      background-color: var(--bg-primary);
+    }
+
+    .why-alora-image {
+      width: 100%;
+      height: 620px;
+      object-fit: cover;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .feature-num {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--accent);
+      line-height: 1;
+      padding-top: 0.2rem;
+    }
+
+    .feature-item h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Instructors */
+    .instructors-section {
+      background-color: var(--bg-secondary);
+    }
+
+    .instructor-card {
+      background: var(--bg-primary);
+      overflow: hidden;
+    }
+
+    .instructor-img-wrapper {
+      height: 380px;
+      overflow: hidden;
+    }
+
+    .instructor-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .instructor-card:hover .instructor-img {
+      transform: scale(1.03);
+    }
+
+    .instructor-details {
+      padding: 2rem;
+    }
+
+    .instructor-role {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .instructor-name {
+      font-size: 1.625rem;
+      margin-bottom: 1rem;
+    }
+
+    .instructor-bio {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .instructor-cert {
+      font-size: 0.8rem;
+      font-style: italic;
+      color: var(--text-secondary);
+      border-top: 1px solid rgba(110, 106, 102, 0.15);
+      padding-top: 0.75rem;
+    }
+
+    /* Studio Experience Lookbook */
+    .gallery-section {
+      background-color: var(--bg-primary);
+      padding-bottom: 4rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      width: 100%;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.04);
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+      background-color: var(--bg-secondary);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      width: 100%;
+    }
+
+    .price-card {
+      background-color: var(--bg-primary);
+      padding: 3rem 2rem;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .price-card.featured {
+      background-color: var(--bg-accent);
+      transform: scale(1.03);
+    }
+
+    .price-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .price-card.featured .price-tag {
+      color: var(--text-primary);
+    }
+
+    .price-name {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-value {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .price-features {
+      list-style: none;
+      width: 100%;
+      margin-bottom: 2.5rem;
+      border-top: 1px solid rgba(110, 106, 102, 0.15);
+      padding-top: 1.5rem;
+    }
+
+    .price-features li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+    }
+
+    .price-card .btn {
+      width: 100%;
+      margin-top: auto;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background-color: var(--bg-primary);
+      text-align: center;
+    }
+
+    .testimonial-carousel {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .testimonial-quote {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-style: italic;
+      line-height: 1.4;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-author {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background-color: var(--bg-secondary);
+    }
+
+    .faq-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(110, 106, 102, 0.2);
+      padding: 1.5rem 0;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      user-select: none;
+    }
+
+    .faq-icon {
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .faq-answer p {
+      padding-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+
+    /* Contact & Form Section */
+    .contact-section {
+      background-color: var(--bg-primary);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 5rem;
+    }
+
+    .contact-info-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .contact-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-item p {
+      font-size: 1rem;
+    }
+
+    .instagram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--accent);
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    .instagram-link svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent);
+      fill: none;
+    }
+
+    .contact-form-wrapper {
+      background-color: var(--bg-secondary);
+      padding: 3.5rem;
+      border-radius: 2px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .form-control {
+      width: 100%;
+      background: var(--bg-primary);
+      border: 1px solid rgba(110, 106, 102, 0.2);
+      padding: 0.85rem 1rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--text-primary);
+    }
+
+    .form-microcopy {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-top: 1rem;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      background-color: var(--bg-accent);
+      text-align: center;
+      padding: 10rem 0;
+    }
+
+    .final-cta-max {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .final-cta h2 {
+      font-size: 3.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .final-cta p {
+      font-size: 1.15rem;
+      margin-bottom: 2.5rem;
+      color: var(--text-primary);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--text-primary);
+      color: #FFFFFF;
+      padding: 5rem 0 3rem 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.5fr;
+      gap: 4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .footer-text {
+      color: #CCCCCC;
+      font-size: 0.9rem;
+      max-width: 300px;
+    }
+
+    .footer-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      color: #FFFFFF;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: #CCCCCC;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+    }
+
+    .newsletter-text {
+      font-size: 0.9rem;
+      color: #CCCCCC;
+      margin-bottom: 1.5rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .newsletter-input {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      flex-grow: 1;
+    }
+
+    .newsletter-input:focus {
+      outline: none;
+      border-color: #FFFFFF;
+    }
+
+    .newsletter-btn {
+      background-color: #FFFFFF;
+      color: var(--text-primary);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #888888;
+    }
+
+    .footer-legal-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-legal-links a:hover {
+      color: #FFFFFF;
+    }
+
+    /* Subpage / Dynamic routing architecture (Single Page Application look & feel) */
+    .page-container {
+      display: none;
+    }
+
+    .page-container.active-page {
+      display: block;
+    }
+
+    /* Subpage Header layout styling overrides */
+    .subpage-hero {
+      background-color: var(--bg-secondary);
+      padding: 10rem 0 6rem 0;
+      text-align: center;
+    }
+
+    .subpage-hero-title {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .subpage-hero-desc {
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Sticky Mobile Booking CTA */
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--bg-primary);
+      border-top: 1px solid rgba(110, 106, 102, 0.2);
+      padding: 1rem 1.5rem;
+      z-index: 99;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Mobile Hamburger Menu */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .menu-toggle svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--text-primary);
+      fill: none;
+    }
+
+    /* Notification Toast */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: var(--text-primary);
+      color: #FFFFFF;
+      padding: 1rem 2rem;
+      font-size: 0.85rem;
+      z-index: 1000;
+      display: none;
+      border-radius: 2px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .grid-3, .class-grid, .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      .footer-grid > *:last-child {
+        grid-column: span 2;
+      }
+    }
+
+    /* 
+      MOBILE COMPATIBILITY LAYER (Max-width: 768px)
+      Targeting responsive fixes and eliminating horizontal scrolling completely.
+    */
+    @media (max-width: 768px) {
+      /* Strong absolute limits for preventing body overflow on modern viewports */
+      html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        position: relative;
+      }
+
+      .container {
+        padding: 0 1.25rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      section {
+        padding: 4.5rem 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Prevent long headers from breaking screen bounds */
+      h1 {
+        font-size: clamp(2rem, 8vw, 2.75rem) !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+      }
+
+      h2 {
+        font-size: clamp(1.65rem, 6vw, 2.15rem) !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+      }
+
+      h3 {
+        font-size: clamp(1.25rem, 5vw, 1.45rem) !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+      }
+
+      .grid-2, .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+        width: 100% !important;
+      }
+
+      /* Navigation Menu & Header alignment */
+      .nav-container {
+        padding: 0 1.25rem !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .menu-toggle {
+        display: block !important;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 5.5rem;
+        left: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        background-color: var(--bg-primary);
+        flex-direction: column;
+        padding: 2rem 1.25rem !important;
+        gap: 1.5rem;
+        border-bottom: 1px solid rgba(110, 106, 102, 0.15);
+        box-sizing: border-box !important; /* Prevent padding from breaking container width limits */
+      }
+
+      .nav-menu.open {
+        display: flex !important;
+      }
+
+      /* Hero Mobile Alignment */
+      .hero {
+        text-align: center;
+        padding-top: 7rem !important;
+        padding-bottom: 3.5rem !important;
+        min-height: auto !important;
+      }
+
+      .hero-content {
+        max-width: 100% !important;
+        margin: 0 auto !important;
+      }
+
+      .hero-ctas {
+        justify-content: center;
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        width: 100% !important;
+      }
+
+      .hero-ctas .btn {
+        width: 100% !important;
+      }
+
+      .hero-trust {
+        justify-content: center;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.85rem !important;
+        width: 100% !important;
+      }
+
+      /* Height adjustments for horyzontal layout on mobile screens */
+      .hero-image-wrapper {
+        height: 260px !important;
+        max-height: 260px !important;
+        width: 100% !important;
+      }
+
+      .wall-branding {
+        top: 8% !important;
+        left: 6% !important;
+      }
+
+      /* Brand Introduction Layout centering & alignment (Beige Section) */
+      .intro {
+        width: 100% !important;
+        background-color: var(--bg-secondary) !important;
+        padding: 4.5rem 0 !important;
+        box-sizing: border-box !important;
+      }
+
+      .intro-max {
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 1.25rem !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; /* Horizontally align flexible contents */
+        text-align: center !important;  /* Target regular paragraphs and headers */
+      }
+
+      .intro-title {
+        font-size: 1.85rem !important;
+        margin-bottom: 1.25rem !important;
+        text-align: center !important;
+        width: 100% !important;
+      }
+
+      .intro-text {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+        width: 100% !important;
+      }
+
+      /* Grids, Columns & Cards */
+      .grid-3, .class-grid, .pricing-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.75rem !important;
+        width: 100% !important;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.75rem !important;
+        width: 100% !important;
+      }
+
+      .gallery-item {
+        height: 180px !important;
+      }
+
+      .why-alora-image {
+        height: auto !important;
+        max-height: 340px !important;
+        width: 100% !important;
+      }
+
+      .feature-list {
+        gap: 1.75rem !important;
+      }
+
+      .feature-item {
+        gap: 1rem !important;
+      }
+
+      /* Price Card Alignment & Scaling */
+      .price-card {
+        width: 100% !important;
+        padding: 2.25rem 1.25rem !important;
+        box-sizing: border-box !important;
+      }
+
+      .price-card.featured {
+        transform: none !important; /* Discard scaling overflow side effects */
+        margin: 0 !important;
+      }
+
+      /* Testimonials styling */
+      .testimonial-quote {
+        font-size: 1.45rem !important;
+        line-height: 1.5 !important;
+      }
+
+      /* FAQ adjustment */
+      .faq-wrapper {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+
+      .faq-question {
+        font-size: 1.1rem !important;
+      }
+
+      /* Form Wrapper adjustments */
+      .contact-form-wrapper {
+        padding: 1.75rem 1.15rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Sticky Mobile CTA Alignment safety margins */
+      .mobile-sticky-cta {
+        display: flex !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        padding: 0.75rem 1.25rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .mobile-sticky-cta .btn {
+        width: 100% !important;
+      }
+
+      body {
+        padding-bottom: 4.5rem !important; /* Space reservation for floating layout elements */
+      }
+
+      /* Footer Layout Columns */
+      .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.25rem !important;
+        padding-bottom: 2.5rem !important;
+      }
+
+      .footer-grid > *:last-child {
+        grid-column: span 1 !important;
+      }
+
+      .footer-bottom {
+        flex-direction: column !important;
+        gap: 1.25rem !important;
+        text-align: center !important;
+      }
+
+      .footer-legal-links {
+        justify-content: center !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Zgłoszenie zostało wysłane pomyślnie.</div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo" data-route="home">Alora</a>
+      <button class="menu-toggle" aria-label="Menu" id="menuToggle">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#classes" class="nav-link" data-route="classes">Zajęcia</a></li>
+        <li><a href="#pricing" class="nav-link" data-route="pricing">Cennik</a></li>
+        <li><a href="#private" class="nav-link" data-route="private">Sesje Prywatne</a></li>
+        <li><a href="#about" class="nav-link" data-route="about">O nas</a></li>
+        <li><a href="#instructors" class="nav-link" data-route="instructors">Instruktorzy</a></li>
+        <li><a href="#faq" class="nav-link" data-route="faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-link" data-route="contact">Kontakt</a></li>
+        <li><a href="#contact" class="btn btn-primary" data-route="contact" style="padding: 0.6rem 1.2rem; font-size: 0.75rem;">Umów pierwsze zajęcia</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Dynamic Content Area -->
+  <main>
+
+    <!-- PAGE: HOME -->
+    <div id="page-home" class="page-container active-page">
+      
+      <!-- Section 1: Hero -->
+      <section class="hero">
+        <div class="container grid-2">
+          <div class="hero-content">
+            <span class="hero-pretitle">Świadomy ruch i quiet luxury</span>
+            <h1 class="hero-title">Siła zaczyna się od równowagi.</h1>
+            <p class="hero-text">Alora to butikowe studio Pilates w sercu Warszawy. Tworzymy przestrzeń, w której precyzja ruchu łączy się z głębokim wyciszeniem, pozwalając Ci odzyskać harmonię i naturalną sprawność ciała.</p>
+            <div class="hero-ctas">
+              <a href="#contact" class="btn btn-primary" data-route="contact">Umów pierwsze zajęcia</a>
+              <a href="#classes" class="btn btn-secondary" data-route="classes">Poznaj nasze zajęcia</a>
+            </div>
+            <div class="hero-trust">
+              <span class="trust-item">
+                <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Kameralne grupy
+              </span>
+              <span class="trust-item">
+                <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Certyfikowani nauczyciele
+              </span>
+              <span class="trust-item">
+                <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Sprzęt premium
+              </span>
+            </div>
+          </div>
+          
+          <!-- Editorial Wide Horizontal Rectangle Image with CSS Wall Branding Overlay -->
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=1200&h=800&q=80" alt="Kameralna atmosfera luksusowego studia pilates Alora - ćwiczenia na reformerach w stonowanych barwach" class="hero-img" loading="eager">
+            
+            <!-- Structural background sign overlay mimicking physical high-end visual design -->
+            <div class="wall-branding">
+              <span class="brand-word">ALORA</span>
+              <span class="brand-sub">PILATES STUDIO</span>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Section 2: Brand Introduction -->
+      <section class="intro">
+        <div class="container intro-max">
+          <span class="section-label">Odkryj nasz świat</span>
+          <h2 class="intro-title">Ruch, który staje się codziennym rytuałem self-care.</h2>
+          <p class="intro-text">Alora nie jest kolejnym klubem fitness. To Twoja oaza spokoju, w której każdy ruch wykonujesz z intencją. Łączymy precyzyjne, profesjonalne podejście z minimalistycznym designem i kameralną atmosferą, która ukoi Twoje zmysły.</p>
+        </div>
+      </section>
+
+      <!-- Section 3: Why Pilates -->
+      <section class="why-pilates">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Dlaczego Pilates?</span>
+            <h2 class="section-title">Zakorzeń się w swoim ciele</h2>
+          </div>
+          <div class="grid-3">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="benefit-title">Głęboka stabilizacja</h3>
+              <p>Wzmacniamy mięśnie głębokie brzucha, miednicy i pleców, budując trwały fundament dla sprawnej sylwetki.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="benefit-title">Uwolnienie od napięć</h3>
+              <p>Precyzyjne ruchy pomagają zmniejszyć sztywność, złagodzić ból kręgosłupa wynikający z siedzącego trybu życia.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="benefit-title">Redukcja stresu</h3>
+              <p>Skoncentrowany oddech połączony z kontrolowanym ruchem uspokaja układ nerwowy i przywraca jasność umysłu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Featured Classes -->
+      <section class="classes-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Nasze Programy</span>
+            <h2 class="section-title">Zajęcia skrojone do Twoich potrzeb</h2>
+          </div>
+          <div class="class-grid">
+            <div class="class-card">
+              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=600&q=80" alt="Trening na reformerze w Alora Pilates" class="class-image" loading="lazy">
+              <div class="class-info">
+                <div class="class-meta">
+                  <span>Czas: 55 min</span>
+                  <span>Trudność: Dowolna</span>
+                </div>
+                <h3>Reformer Pilates</h3>
+                <p>Klasyczny trening na kultowej maszynie Reformer. Wykorzystuje opór sprężyn do budowania siły, gibkości oraz precyzyjnej koordynacji ciała.</p>
+                <a href="#contact" class="btn btn-secondary" data-route="contact">Zarezerwuj miejsce</a>
+              </div>
+            </div>
+            <div class="class-card">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Trening indywidualny pilates w Warszawie" class="class-image" loading="lazy">
+              <div class="class-info">
+                <div class="class-meta">
+                  <span>Czas: 60 min</span>
+                  <span>Trudność: Indywidualna</span>
+                </div>
+                <h3>Sesje Prywatne</h3>
+                <p>Trening w 100% dostosowany do Twoich celów i możliwości. Idealna opcja na powrót po kontuzji lub dla wymagających klientów.</p>
+                <a href="#contact" class="btn btn-secondary" data-route="contact">Zarezerwuj miejsce</a>
+              </div>
+            </div>
+            <div class="class-card">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Zajęcia pilates na matach dla początkujących" class="class-image" loading="lazy">
+              <div class="class-info">
+                <div class="class-meta">
+                  <span>Czas: 55 min</span>
+                  <span>Trudność: Początkujący</span>
+                </div>
+                <h3>Alora Intro</h3>
+                <p>Specjalny program dedykowany osobom, które stawiają pierwsze kroki w świecie Pilatesu. Bezpiecznie, wolno i dokładnie.</p>
+                <a href="#contact" class="btn btn-secondary" data-route="contact">Zarezerwuj miejsce</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Why Choose Alora -->
+      <section class="why-alora">
+        <div class="container grid-2">
+          <div>
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80" alt="Wnętrze butikowego studia pilates w Warszawie" class="why-alora-image" loading="lazy">
+          </div>
+          <div>
+            <span class="section-label">Twój standard</span>
+            <h2 class="section-title" style="margin-bottom: 3rem;">Inna perspektywa ruchu.</h2>
+            <div class="feature-list">
+              <div class="feature-item">
+                <span class="feature-num">01</span>
+                <div>
+                  <h3>Kameralne grupy (do 5 osób)</h3>
+                  <p>Kameralna atmosfera pozwala nam czuwać nad poprawnością każdego powtórzenia. U nas nigdy nie będziesz anonimowa.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-num">02</span>
+                <div>
+                  <h3>Przestrzeń, która wycisza</h3>
+                  <p>Dbamy o każdy detal: miękkie oświetlenie, naturalne materiały i zapach olejków ułatwiają oderwanie się od codziennego zgiełku.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-num">03</span>
+                <div>
+                  <h3>Najwyższa certyfikacja</h3>
+                  <p>Nasi instruktorzy posiadają certyfikaty międzynarodowych szkół Pilatesu i regularnie poszerzają swoją wiedzę z zakresu fizjoterapii.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Meet the Instructors (Snippet) -->
+      <section class="instructors-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Nasz Zespół</span>
+            <h2 class="section-title">W rękach ekspertów</h2>
+          </div>
+          <div class="grid-3">
+            <div class="instructor-card">
+              <div class="instructor-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Anna Kowalska - założycielka Alora Pilates" class="instructor-img" loading="lazy">
+              </div>
+              <div class="instructor-details">
+                <span class="instructor-role">Założycielka / Nauczycielka</span>
+                <h3 class="instructor-name">Anna Kowalska</h3>
+                <p class="instructor-bio">Związana z Pilatesem od ponad dekady. Wierzy, że ruch ma moc terapeutyczną i powinien przynosić ulgę cieleśnie i mentalnie.</p>
+                <span class="instructor-cert">Certyfikacja: Peak Pilates Comprehensive</span>
+              </div>
+            </div>
+            <div class="instructor-card">
+              <div class="instructor-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=500&q=80" alt="Marta Wiśniewska - fizjoterapeutka i instruktor pilatesu" class="instructor-img" loading="lazy">
+              </div>
+              <div class="instructor-details">
+                <span class="instructor-role">Fizjoterapeutka / Nauczycielka</span>
+                <h3 class="instructor-name">Marta Wiśniewska</h3>
+                <p class="instructor-bio">Łączy klasyczny Pilates z nowoczesną wiedzą z zakresu fizjoterapii i biodynamiki ciała.</p>
+                <span class="instructor-cert">Certyfikacja: STOTT PILATES Intensive Matwork</span>
+              </div>
+            </div>
+            <div class="instructor-card">
+              <div class="instructor-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Julia Nowak - instruktorka pilatesu" class="instructor-img" loading="lazy">
+              </div>
+              <div class="instructor-details">
+                <span class="instructor-role">Nauczycielka Reformer</span>
+                <h3 class="instructor-name">Julia Nowak</h3>
+                <p class="instructor-bio">Kocha dynamikę i precyzję reformera. Pomoże Ci odkryć głębokie mięśnie, o których istnieniu nie miałaś pojęcia.</p>
+                <span class="instructor-cert">Certyfikacja: Balanced Body Reformer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Studio Experience Lookbook -->
+      <section class="gallery-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Lookbook</span>
+            <h2 class="section-title">Piękno ukryte w prostocie</h2>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" alt="Estetyczne wnętrze recepcji studia Alora Pilates" class="gallery-img" loading="lazy">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Maszyna reformer w naturalnym słońcu" class="gallery-img" loading="lazy">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=500&q=80" alt="Detale i naturalne faktury w studiu" class="gallery-img" loading="lazy">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=500&q=80" alt="Kobieta rozciągająca się na zajęciach pilatesu" class="gallery-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Memberships & Pricing Snippet -->
+      <section class="pricing-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Oferta i Inwestycja</span>
+            <h2 class="section-title">Wybierz swoją drogę do równowagi</h2>
+          </div>
+          <div class="pricing-grid">
+            <div class="price-card">
+              <span class="price-tag">Na start</span>
+              <h3 class="price-name">Pakiet Intro</h3>
+              <div class="price-value">190 PLN</div>
+              <ul class="price-features">
+                <li>2 pierwsze zajęcia grupowe</li>
+                <li>Wprowadzenie do zasad studia</li>
+                <li>Konsultacja z instruktorem</li>
+                <li>Ważność: 14 dni</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary" data-route="contact">Wybierz pakiet</a>
+            </div>
+            <div class="price-card featured">
+              <span class="price-tag">Najpopularniejszy</span>
+              <h3 class="price-name">Karnet 4 Wejścia</h3>
+              <div class="price-value">360 PLN</div>
+              <ul class="price-features">
+                <li>4 wejścia na dowolne zajęcia</li>
+                <li>Kameralne grupy (do 5 osób)</li>
+                <li>Opieka doświadczonych trenerów</li>
+                <li>Ważność: 30 dni</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary" data-route="contact">Wybierz pakiet</a>
+            </div>
+            <div class="price-card">
+              <span class="price-tag">Regularna Praktyka</span>
+              <h3 class="price-name">Karnet 8 Wejść</h3>
+              <div class="price-value">680 PLN</div>
+              <ul class="price-features">
+                <li>8 wejść na dowolne zajęcia</li>
+                <li>Dostęp do wszystkich typów maszyn</li>
+                <li>Indywidualna analiza postępów</li>
+                <li>Ważność: 30 dni</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary" data-route="contact">Wybierz pakiet</a>
+            </div>
+            <div class="price-card">
+              <span class="price-tag">Indywidualnie</span>
+              <h3 class="price-name">Sesja Prywatna</h3>
+              <div class="price-value">220 PLN</div>
+              <ul class="price-features">
+                <li>Trening sam na sam (1:1)</li>
+                <li>Pełna uwaga fizjoterapeuty</li>
+                <li>Dostosowanie programu pod cele</li>
+                <li>Skarpetki antypoślizgowe w cenie</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary" data-route="contact">Wybierz pakiet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9: Testimonials -->
+      <section class="testimonials">
+        <div class="container testimonial-carousel">
+          <span class="section-label">Wasze Opinie</span>
+          <p class="testimonial-quote">"Alora to oaza w centrum miasta. Studio zachwyca designem, ale to wiedza i empatia instruktorek sprawiają, że czuję się zaopiekowana od pierwszego wejścia."</p>
+          <span class="testimonial-author">Kamila, Architekt wnętrz</span>
+        </div>
+      </section>
+
+      <!-- Section 10: FAQ (Snippet) -->
+      <section class="faq-section">
+        <div class="container faq-wrapper">
+          <div class="section-header">
+            <span class="section-label">Odpowiadamy</span>
+            <h2 class="section-title">Pytania i wątpliwości</h2>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Czy muszę mieć wcześniejsze doświadczenie w Pilatesie?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Zdecydowana większość naszych klientów zaczyna od zera. Nasze zajęcia, zwłaszcza pakiet Intro i sesje indywidualne, są zaprojektowane tak, aby krok po kroku nauczyć Cię prawidłowej techniki i zapoznać ze sprzętem w bezpieczny sposób.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Jak ubrać się na zajęcia?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Najlepiej sprawdzi się elastyczny strój przylegający do ciała (np. legginsy i dopasowany top). Ułatwi to instruktorowi obserwację Twojej sylwetki i precyzyjne korygowanie postawy. Ze względów higienicznych i bezpieczeństwa ćwiczymy w skarpetkach antypoślizgowych.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Ile osób liczy grupa na zajęciach?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Stawiamy na najwyższy komfort i jakość, dlatego nasze grupy liczą maksymalnie do 5 osób. To gwarantuje, że instruktor ma pełną kontrolę nad poprawnością wykonywanych przez Ciebie ćwiczeń.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 11: Contact & Location -->
+      <section class="contact-section">
+        <div class="container contact-grid">
+          <div class="contact-info-block">
+            <div>
+              <span class="section-label">Kontakt</span>
+              <h2 class="section-title" style="margin-bottom: 2rem;">Porozmawiajmy</h2>
+            </div>
+            <div class="contact-item">
+              <h3>Adres Studia</h3>
+              <p>ul. Mokotowska 42, Śródmieście<br>00-543 Warszawa</p>
+            </div>
+            <div class="contact-item">
+              <h3>Godziny Pracy</h3>
+              <p>Poniedziałek – Piątek: 07:00 – 21:00<br>Sobota – Niedziela: 08:00 – 16:00</p>
+            </div>
+            <div class="contact-item">
+              <h3>Bezpośredni kontakt</h3>
+              <p>E-mail: hello@alorapilates.pl<br>Telefon: +48 500 123 456</p>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" stroke-width="1.5"/></svg>
+                Śledź nas na Instagramie
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="booking-form">
+              <div class="form-group">
+                <label for="fname">Imię i nazwisko</label>
+                <input type="text" id="fname" class="form-control" required placeholder="Napisz jak się nazywasz">
+              </div>
+              <div class="form-group">
+                <label for="femail">Adres e-mail</label>
+                <input type="email" id="femail" class="form-control" required placeholder="Twoja skrzynka pocztowa">
+              </div>
+              <div class="form-group">
+                <label for="fphone">Telefon</label>
+                <input type="tel" id="fphone" class="form-control" required placeholder="Numer kontaktowy">
+              </div>
+              <div class="form-group">
+                <label for="fclass">Rodzaj zajęć</label>
+                <select id="fclass" class="form-control">
+                  <option value="intro">Pakiet Intro (Zajęcia grupowe dla początkujących)</option>
+                  <option value="reformer">Reformer Pilates (Grupowe)</option>
+                  <option value="private">Sesja Prywatna (1:1)</option>
+                  <option value="other">Inna usługa</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fmsg">Preferowany termin lub uwagi</label>
+                <textarea id="fmsg" rows="3" class="form-control" placeholder="Opowiedz nam o swoich celach lub wskaż dogodny termin..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Wyślij zgłoszenie</button>
+              <p class="form-microcopy">Odpowiemy w ciągu 24 godzin. Pierwsza wizyta trwa 60 minut.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 12: Final CTA -->
+      <section class="final-cta">
+        <div class="container final-cta-max">
+          <h2>Twoja pierwsza klasa zaczyna się od jednej decyzji.</h2>
+          <p>Daj swojemu ciału precyzję i lekkość, na jaką zasługuje. Odkryj przestrzeń stworzoną z myślą o świadomym ruchu i głębokiej regeneracji.</p>
+          <a href="#contact" class="btn btn-primary" data-route="contact">Zarezerwuj pierwszą sesję</a>
+        </div>
+      </section>
+
+    </div>
+
+
+    <!-- PAGE: CLASSES -->
+    <div id="page-classes" class="page-container">
+      <div class="subpage-hero">
+        <div class="container">
+          <span class="section-label">Nasze Zajęcia</span>
+          <h1 class="subpage-hero-title">Ruch z intencją i świadomością</h1>
+          <p class="subpage-hero-desc">Wybierz formę aktywności dopasowaną do Twojego obecnego nastroju, poziomu sprawności oraz celów długoterminowych.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container">
+          <div class="class-grid" style="grid-template-columns: repeat(2, 1fr); gap: 3.5rem;">
+            <div class="class-card">
+              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80" alt="Zajęcia Pilates na reformerach w Warszawie" class="class-image">
+              <div class="class-info">
+                <div class="class-meta"><span>55 MINUT</span><span>ŚREDNIOZAAWANSOWANE</span></div>
+                <h3>Reformer Classic</h3>
+                <p>Trening oparty o klasyczną metodologię Pilatesu na reformerach. Skupiamy się na wzmacnianiu mięśni posturalnych, korygowaniu ułożenia miednicy i kręgosłupa przy użyciu regulowanego oporu sprężyn.</p>
+                <a href="#contact" class="btn btn-secondary" data-route="contact">Umów zajęcia</a>
+              </div>
+            </div>
+            <div class="class-card">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Zaawansowane zajęcia pilates na reformerach" class="class-image">
+              <div class="class-info">
+                <div class="class-meta"><span>55 MINUT</span><span>ZAAWANSOWANE</span></div>
+                <h3>Reformer Athletic</h3>
+                <p>Dynamiczna odmiana Pilatesu reformer. Zwiększona liczba powtórzeń, bardziej wymagające pozycje stojące i wymagający balans pozwolą Ci zbudować smukłą sylwetkę i przetestować swoją wytrzymałość fizyczną.</p>
+                <a href="#contact" class="btn btn-secondary" data-route="contact">Umów zajęcia</a>
+              </div>
+            </div>
+            <div class="class-card">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="Mat Pilates Warszawa" class="class-image">
+              <div class="class-info">
+                <div class="class-meta"><span>50 MINUT</span><span>DLA KAŻDEGO</span></div>
+                <h3>Mat Pilates Flow</h3>
+                <p>Klasyczny Pilates na matach, wykorzystujący ciężar własnego ciała, małe piłki, gumy i obręcze oporowe. Płynne, kontrolowane przejścia między ćwiczeniami poprawiają elastyczność i kontrolę oddechu.</p>
+                <a href="#contact" class="btn btn-secondary" data-route="contact">Umów zajęcia</a>
+              </div>
+            </div>
+            <div class="class-card">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Pilates dla kobiet w ciąży Warszawa" class="class-image">
+              <div class="class-info">
+                <div class="class-meta"><span>50 MINUT</span><span>SPECJALISTYCZNE</span></div>
+                <h3>Prenatal Pilates</h3>
+                <p>Zajęcia stworzone z myślą o przyszłych mamach. Skupiamy się na bezpiecznym uelastycznieniu dna miednicy, wsparciu odcinka lędźwiowego kręgosłupa i delikatnym wzmocnieniu rąk oraz nóg.</p>
+                <a href="#contact" class="btn btn-secondary" data-route="contact">Umów zajęcia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- PAGE: MEMBERSHIPS & PRICING -->
+    <div id="page-pricing" class="page-container">
+      <div class="subpage-hero">
+        <div class="container">
+          <span class="section-label">Cennik</span>
+          <h1 class="subpage-hero-title">Inwestycja w Twoje ciało i spokój</h1>
+          <p class="subpage-hero-desc">Przejrzyste pakiety i członkostwa. Bez ukrytych kosztów i długoterminowych zobowiązań.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container">
+          <div class="pricing-grid">
+            <div class="price-card">
+              <span class="price-tag">Intro</span>
+              <h3 class="price-name">Pierwszy Krok</h3>
+              <div class="price-value">190 PLN</div>
+              <ul class="price-features">
+                <li>2 wejścia grupowe (Reformer/Mat)</li>
+                <li>Wprowadzenie dla początkujących</li>
+                <li>Pomoc przy konfiguracji maszyn</li>
+                <li>Ważność: 14 dni</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary" data-route="contact">Kup Pakiet</a>
+            </div>
+            <div class="price-card">
+              <span class="price-tag">Pojedyncze Wejście</span>
+              <h3 class="price-name">Single Class</h3>
+              <div class="price-value">100 PLN</div>
+              <ul class="price-features">
+                <li>1 wejście na dowolne zajęcia</li>
+                <li>Dowolny typ maszyn</li>
+                <li>Zapewniona mata oraz sprzęt</li>
+                <li>Ważność: 30 dni</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary" data-route="contact">Kup Wejście</a>
+            </div>
+            <div class="price-card featured">
+              <span class="price-tag">Najchętniej Wybierany</span>
+              <h3 class="price-name">Karnet 4 Wejścia</h3>
+              <div class="price-value">360 PLN</div>
+              <ul class="price-features">
+                <li>4 wejścia na dowolne zajęcia</li>
+                <li>Mała kameralna grupa (do 5 osób)</li>
+                <li>Dostęp do profesjonalnej opieki</li>
+                <li>Ważność: 30 dni</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary" data-route="contact">Kup Karnet</a>
+            </div>
+            <div class="price-card">
+              <span class="price-tag">Dla Zaangażowanych</span>
+              <h3 class="price-name">Karnet 8 Wejść</h3>
+              <div class="price-value">680 PLN</div>
+              <ul class="price-features">
+                <li>8 wejść na dowolne zajęcia</li>
+                <li>Indywidualne porady instruktora</li>
+                <li>Zróżnicowane systemy ćwiczeń</li>
+                <li>Ważność: 30 dni</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary" data-route="contact">Kup Karnet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- PAGE: PRIVATE SESSIONS -->
+    <div id="page-private" class="page-container">
+      <div class="subpage-hero">
+        <div class="container">
+          <span class="section-label">Trening Indywidualny</span>
+          <h1 class="subpage-hero-title">Sesje Prywatne 1:1</h1>
+          <p class="subpage-hero-desc">Maksymalne skupienie na Twoich celach, postawie i indywidualnych uwarunkowaniach anatomicznych.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title" style="margin-bottom: 2rem;">Twój osobisty przewodnik w świadomym ruchu</h2>
+            <p style="margin-bottom: 1.5rem;">Sesje indywidualne w Alora Pilates to najbardziej efektywna ścieżka do poprawy kondycji fizycznej, zredukowania napięcia i powrotu do pełnej mobilności po urazach. Pracujesz z dyplomowanym fizjoterapeutą i instruktorem pilatesu, który układa plan precyzyjnie dopasowany do Twojego ciała.</p>
+            <p style="margin-bottom: 2rem;">Trening dedykowany jest zarówno absolutnie początkującym, którzy pragną poznać maszyny i precyzyjną technikę, jak i sportowcom pragnącym poprawić swoje wyniki i zapobiegać kontuzjom.</p>
+            <a href="#contact" class="btn btn-primary" data-route="contact">Zarezerwuj konsultację 1:1</a>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="Trener prowadzący indywidualny trening pilates z klientką" style="width: 100%; height: 500px; object-fit: cover;">
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- PAGE: ABOUT -->
+    <div id="page-about" class="page-container">
+      <div class="subpage-hero">
+        <div class="container">
+          <span class="section-label">O Alora</span>
+          <h1 class="subpage-hero-title">Sanktuarium świadomego ruchu</h1>
+          <p class="subpage-hero-desc">Zaprojektowane z myślą o odpoczynku dla zmysłów i pełnym skupieniu na sile, która płynie z wnętrza.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container grid-2">
+          <div>
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80" alt="Designerskie i minimalistyczne wnętrze Alora Pilates" style="width: 100%; height: 500px; object-fit: cover;">
+          </div>
+          <div>
+            <span class="section-label">Nasza Filozofia</span>
+            <h2 class="section-title" style="margin-bottom: 2rem;">Więcej niż ruch. Przestrzeń dbania o siebie.</h2>
+            <p style="margin-bottom: 1.5rem;">Alora powstało z potrzeby stworzenia miejsca, które różni się od głośnych i tłocznych siłowni komercyjnych. Zamiast dynamicznej muzyki i pośpiechu, oferujemy naturalne światło, zapach drewna i ziół, wyselekcjonowane olejki eteryczne oraz profesjonalnych nauczycieli skupionych wyłącznie na Twoim ciele.</p>
+            <p style="margin-bottom: 2rem;">Wierzymy, że precyzyjny ruch Pilatesu ma potencjał odnowienia nie tylko sylwetki, ale i kondycji psychicznej. Kładziemy nacisk na precyzję, oddychanie i budowanie trwałych, zdrowych nawyków, które będą wspierać Cię w codziennym życiu zawodowym i prywatnym.</p>
+            <a href="#contact" class="btn btn-primary" data-route="contact">Odwiedź nas</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- PAGE: INSTRUCTORS -->
+    <div id="page-instructors" class="page-container">
+      <div class="subpage-hero">
+        <div class="container">
+          <span class="section-label">Nasz Zespół</span>
+          <h1 class="subpage-hero-title">Twoi przewodnicy</h1>
+          <p class="subpage-hero-desc">Dyplomowani specjaliści, fizjoterapeuci i entuzjaści świadomego ruchu, którzy czuwają nad Twoim postępem.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container">
+          <div class="grid-3">
+            <div class="instructor-card">
+              <div class="instructor-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Anna Kowalska - Alora Pilates" class="instructor-img">
+              </div>
+              <div class="instructor-details">
+                <span class="instructor-role">Założycielka / Główna instruktorka</span>
+                <h3 class="instructor-name">Anna Kowalska</h3>
+                <p class="instructor-bio">Przez lata praktykowała klasyczną metodę w Nowym Jorku i Londynie. Swoją pasję i doświadczenie przekłada na warszawskie studio, tworząc ciepłe, inspirujące i profesjonalne środowisko dla każdego.</p>
+                <span class="instructor-cert">Certyfikacja: Peak Pilates Comprehensive</span>
+              </div>
+            </div>
+            <div class="instructor-card">
+              <div class="instructor-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=500&q=80" alt="Marta Wiśniewska - Fizjoterapeutka" class="instructor-img">
+              </div>
+              <div class="instructor-details">
+                <span class="instructor-role">Fizjoterapeutka / Trenerka</span>
+                <h3 class="instructor-name">Marta Wiśniewska</h3>
+                <p class="instructor-bio">Jako absolwentka fizjoterapii na Warszawskim Uniwersytecie Medycznym, kładzie szczególny nacisk na rehabilitacyjne właściwości Pilatesu, pomagając w bezpieczny sposób pozbyć się bólu i asymetrii.</p>
+                <span class="instructor-cert">Certyfikacja: STOTT PILATES Mat & Reformer</span>
+              </div>
+            </div>
+            <div class="instructor-card">
+              <div class="instructor-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Julia Nowak - Instruktorka" class="instructor-img">
+              </div>
+              <div class="instructor-details">
+                <span class="instructor-role">Instruktorka Reformer / Mat</span>
+                <h3 class="instructor-name">Julia Nowak</h3>
+                <p class="instructor-bio">Pasjonatka dynamicznych, nowoczesnych odmian reformer pilatesu. Jej treningi to harmonijne połączenie rzetelnej techniki z dawką energii poprawiającej nastrój na cały dzień.</p>
+                <span class="instructor-cert">Certyfikacja: Balanced Body Pilates Instructor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- PAGE: FAQ -->
+    <div id="page-faq" class="page-container">
+      <div class="subpage-hero">
+        <div class="container">
+          <span class="section-label">Baza wiedzy</span>
+          <h1 class="subpage-hero-title">Częste pytania</h1>
+          <p class="subpage-hero-desc">Zależy nam na pełnej przejrzystości. Znajdziesz tu odpowiedzi na najczęstsze pytania naszych nowych gości.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container faq-wrapper">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Czy Pilates na maszynach jest trudny?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Reformer wykorzystuje system sprężyn i bloczków, co z jednej strony stawia wyzwanie, a z drugiej wspiera i ułatwia wykonywanie wielu trudnych ćwiczeń na macie. Zajęcia są zróżnicowane i dopasowane do Twoich możliwości pod okiem trenera.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Ile razy w tygodniu powinnam ćwiczyć?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Dla zauważalnych i trwałych rezultatów polecamy trening od 2 do 3 razy w tygodniu. Już po kilkunastu sesjach poczujesz zdecydowaną poprawę postawy, lekkość w ruchu i mocniejsze ciało.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Czy w pobliżu studia jest parking?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Tak, studio znajduje się przy ulicy Mokotowskiej, gdzie obowiązuje miejska strefa płatnego parkowania. Dodatkowo w odległości 3 minut piechotą znajduje się strzeżony parking wielopoziomowy.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Jaka jest polityka odwoływania zajęć?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Szanujemy czas naszych instruktorów i innych uczestników. Bezpłatne odwołanie lub przełożenie zarezerwowanej rezerwacji jest możliwe maksymalnie na 24 godziny przed planowanym rozpoczęciem treningu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- PAGE: CONTACT -->
+    <div id="page-contact" class="page-container">
+      <div class="subpage-hero">
+        <div class="container">
+          <span class="section-label">Skontaktuj się</span>
+          <h1 class="subpage-hero-title">Zacznijmy współpracę</h1>
+          <p class="subpage-hero-desc">Z przyjemnością odpowiemy na wszelkie pytania lub pomożemy dobrać optymalny format zajęć.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container contact-grid">
+          <div class="contact-info-block">
+            <div class="contact-item">
+              <h3>Adres Studia</h3>
+              <p>ul. Mokotowska 42<br>00-543 Warszawa</p>
+            </div>
+            <div class="contact-item">
+              <h3>Godziny Pracy</h3>
+              <p>Poniedziałek – Piątek: 07:00 – 21:00<br>Sobota – Niedziela: 08:00 – 16:00</p>
+            </div>
+            <div class="contact-item">
+              <h3>Bezpośredni kontakt</h3>
+              <p>E-mail: hello@alorapilates.pl<br>Telefon: +48 500 123 456</p>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form id="contactFormSub" class="booking-form">
+              <div class="form-group">
+                <label for="fnameSub">Imię i nazwisko</label>
+                <input type="text" id="fnameSub" class="form-control" required placeholder="Imię i nazwisko">
+              </div>
+              <div class="form-group">
+                <label for="femailSub">Adres e-mail</label>
+                <input type="email" id="femailSub" class="form-control" required placeholder="Adres e-mail">
+              </div>
+              <div class="form-group">
+                <label for="fphoneSub">Telefon</label>
+                <input type="tel" id="fphoneSub" class="form-control" required placeholder="Numer telefonu">
+              </div>
+              <div class="form-group">
+                <label for="fmsgSub">Wiadomość</label>
+                <textarea id="fmsgSub" rows="4" class="form-control" placeholder="Jak możemy Ci pomóc? Np. wybór zajęć, problemy zdrowotne..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Wyślij wiadomość</button>
+              <p class="form-microcopy">Odpowiemy w ciągu 24 godzin. Chętnie odpowiemy na każde pytanie.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Sticky Mobile Booking CTA -->
+  <div class="mobile-sticky-cta">
+    <a href="#contact" class="btn btn-primary" data-route="contact">Umów pierwsze zajęcia</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Alora</div>
+          <p class="footer-text">Butikowe studio Pilates w sercu Warszawy. Przestrzeń stworzona z myślą o świadomym ruchu i głębokim wyciszeniu Twoich zmysłów.</p>
+        </div>
+        <div>
+          <h3 class="footer-title">Studio</h3>
+          <ul class="footer-links">
+            <li><a href="#home" data-route="home">O nas</a></li>
+            <li><a href="#classes" data-route="classes">Zajęcia</a></li>
+            <li><a href="#pricing" data-route="pricing">Cennik</a></li>
+            <li><a href="#contact" data-route="contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Dołącz do Newslettera</h3>
+          <p class="newsletter-text">Bądź na bieżąco z nowościami, warsztatami i poradami naszych fizjoterapeutów.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" required placeholder="Adres e-mail" aria-label="E-mail do newslettera">
+            <button type="submit" class="newsletter-btn">Zapisz</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alora Pilates. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer-legal-links">
+          <a href="#">Polityka Prywatności</a>
+          <a href="#">Regulamin Studia</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple SPA Router for a fluid high-end UX experience
+    function handleRouting() {
+      const links = document.querySelectorAll('[data-route]');
+      const pages = document.querySelectorAll('.page-container');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      function navigateTo(route) {
+        // Prevent empty or broken page transitions
+        const targetPage = document.getElementById(`page-${route}`);
+        if (!targetPage) return;
+
+        // Hide all pages
+        pages.forEach(page => page.classList.remove('active-page'));
+        
+        // Show current page
+        targetPage.classList.add('active-page');
+
+        // Update nav links active states
+        navLinks.forEach(link => {
+          if (link.getAttribute('data-route') === route) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+
+        // Close mobile menu if open
+        const navMenu = document.getElementById('navMenu');
+        if (navMenu) navMenu.classList.remove('open');
+
+        // Scroll gracefully to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const route = link.getAttribute('data-route');
+          navigateTo(route);
+          // Update URL hash without jumping
+          history.pushState(null, null, `#${route}`);
+        });
+      });
+
+      // Handle direct hash loading / refreshes
+      window.addEventListener('load', () => {
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+          navigateTo(hash);
+        }
+      });
+
+      // Handle browser back/forward buttons
+      window.addEventListener('popstate', () => {
+        const hash = window.location.hash.replace('#', '') || 'home';
+        navigateTo(hash);
+      });
+    }
+
+    // Interactive Accordion (FAQ)
+    function initFAQ() {
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          // Close other items if desired (accordion effect)
+          faqItems.forEach(other => {
+            if (other !== item) other.classList.remove('active');
+          });
+          item.classList.toggle('active');
+        });
+      });
+    }
+
+    // Form Submissions Mock & UI Toast
+    function initFormHandlers() {
+      const forms = document.querySelectorAll('form');
+      const toast = document.getElementById('toast');
+
+      forms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          
+          // Mimic successful background validation and communication
+          toast.style.display = 'block';
+          setTimeout(() => {
+            toast.style.display = 'none';
+          }, 4000);
+
+          form.reset();
+        });
+      });
+    }
+
+    // Mobile Menu Toggle
+    function initMobileMenu() {
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('open');
+        });
+      }
+    }
+
+    // Execute functions on DOM Ready
+    document.addEventListener('DOMContentLoaded', () => {
+      handleRouting();
+      initFAQ();
+      initFormHandlers();
+      initMobileMenu();
+    });
+  </script>
+</body>
+</html>
